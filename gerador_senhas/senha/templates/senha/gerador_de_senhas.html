@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <h1>Gerador de Senhas</h1>
+    <form method="get">
+        <label for="tamanho">Tamanho da senha:</label>
+        <input type="number" name="tamanho" min="1" value="12">
+        <button type="submit">Gerar Senha</button>
+    </form>
+    {% if senha %}
+        <p>Senha gerada: <strong>{{ senha }}</strong></p>
+    {% endif %}
+</body>
+</html>
